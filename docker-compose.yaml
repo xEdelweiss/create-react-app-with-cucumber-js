@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  cra:
+    container_name: cra
+    image: node:16
+    tty: true
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./src:/usr/src/app
+    working_dir: /usr/src/app
